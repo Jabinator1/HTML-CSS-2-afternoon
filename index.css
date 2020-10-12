@@ -1,0 +1,105 @@
+html {
+    font-family: sans-serif;
+}
+
+header {
+    background-color: rgb(36,41,46);
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+}
+
+
+.header-content {
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.left-side {
+    display: flex;
+    width: 675px;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.left-side > img {
+    width: 32.5px;
+}
+
+.search-class {
+    position: relative;
+}
+
+#search-slash {
+    position: absolute;
+    right: 8px;
+    top: 4px;
+    
+}
+
+#search-bar {
+    border: 1px solid rgb(72,76,80);
+    border-radius: 5px;
+    padding: 0 10px;
+    height: 26px;
+    width: 250px;
+    background-color: rgb(72,76,80);
+    color: rgb(214,215,216);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 8px;
+}
+
+.right-side {
+    display: flex;
+    align-items: center;
+}
+
+.profile > img {
+    clip-path: circle(50%);
+    height: 20px;
+}
+
+.header-item {
+    margin-right: 16px;
+}
+
+.arrow-fix {
+    display: flex;
+    align-items: center;
+}
+
+.bell-icon {
+    color: white;
+    font-size: 16px;
+}
+
+.plus-icon {
+    color: white;
+    font-size: 16px;
+}
+
+.caret {
+    width: 0; 
+    height: 0; 
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid white;
+    margin-left: 5px;
+  }
