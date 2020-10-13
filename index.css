@@ -120,12 +120,13 @@ nav ul li a {
 
 .header-two {
     display: flex;
-    justify-content: flex-start;
+    /* justify-content: center; */
 }
 
 .sticky-header {
     display: flex;
     padding: 0 32px;
+    justify-content: center;
 }
 
 .sticky-header nav {
@@ -265,8 +266,24 @@ nav .iconify {
     line-height: 18px;
 }
 
+.repos-info {
+    padding: 0 16px;
+    width: 936px;
+}
+
 .repos-title {
     display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.latest-repos {
+    display: flex;
+    overflow: wrap;
+}
+
+.repo-info {
+    padding: 16px;
 }
 
 
