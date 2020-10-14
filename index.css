@@ -18,7 +18,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 16px;
+    padding: 16px 32px;
 }
 
 .left-side {
@@ -31,10 +31,12 @@ header {
 
 .left-side>img {
     width: 32.5px;
+    padding-right: 16px;
 }
 
 .search-class {
     position: relative;
+    margin-right: 16px;
 }
 
 #search-slash {
@@ -45,18 +47,18 @@ header {
 
 #search-bar {
     border: 1px solid rgb(72, 76, 80);
-    border-radius: 5px;
+    border-radius: 6px;
     padding: 0 10px;
     height: 26px;
     width: 250px;
-    background-color: rgb(63, 69, 72);
-    color: white;
+    background-color:rgb(72,76,80);
+    color: rgba(255, 255, 255, 0.7);
     font-size: 14px;
 }
 
 nav ul {
     display: flex;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
 }
 
 nav ul li a {
@@ -120,7 +122,7 @@ nav ul li a {
 
 .header-two {
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
 }
 
 .sticky-header {
@@ -167,7 +169,7 @@ nav .iconify {
     align-items: center;
 }
 
-.eleven {
+.sixteen {
     color: rgb(27, 32, 36);
     font-size: 14px;
     background-color: rgb(231, 234, 236);
@@ -267,6 +269,7 @@ nav .iconify {
 }
 
 .repos-info {
+    margin-top: 24px; 
     padding: 0 16px;
     width: 936px;
 }
@@ -275,16 +278,35 @@ nav .iconify {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    margin-bottom: 8px;
 }
 
-.latest-repos {
+#latest-repos {
     display: flex;
-    overflow: wrap;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.repo-container {
+    width: 49%;
+    border: 1px solid #e1e4e8;
+    border-radius: 5px;
+    margin-bottom: 16px;
 }
 
 .repo-info {
     padding: 16px;
 }
+
+.repo-title {
+    text-decoration: none;
+    color: rgb(4, 102, 214);
+}
+
+.repo-title:hover {
+    text-decoration: underline;
+}
+
 
 
 /* footer {
