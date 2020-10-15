@@ -46,13 +46,13 @@ header {
 }
 
 #search-bar {
-    border: 1px solid rgb(72, 76, 80);
+    border: 0;
     border-radius: 6px;
     padding: 0 10px;
-    height: 26px;
+    height: 28px;
     width: 250px;
-    background-color:rgb(72,76,80);
-    color: rgba(255, 255, 255, 0.7);
+    background-color: hsla(0, 0%, 100%, .125);
+    color: #fff;
     font-size: 14px;
 }
 
@@ -122,13 +122,11 @@ nav ul li a {
 
 .header-two {
     display: flex;
-    justify-content: center;
 }
 
 .sticky-header {
     display: flex;
-    padding: 0 32px;
-    justify-content: center;
+    margin-left: 32%;
 }
 
 .sticky-header nav {
@@ -142,10 +140,12 @@ nav ul li a {
 nav .iconify {
     color: rgb(148, 157, 165);
     margin-right: 4px;
+    width: 16px;
+    height: 16px;
 }
 
 .sticky-navigation-items {
-    padding: 0 16px;
+    padding: 0;
 }
 
 .sticky-navigation-items nav a {
@@ -189,6 +189,8 @@ nav .iconify {
 .info {
     max-width: 280px;
     padding: 0 16px;
+    position: absolute;
+    top: 100px;
 }
 
 .profile-image {
@@ -199,13 +201,13 @@ nav .iconify {
 
 .set-status {
     position: absolute;
-    top: 75%;
-    right: 5%;
+    top: 73%;
+    right: 1%;
     background-color: white;
     color: dimgray;
     border-radius: 50%;
     padding: 8px 8px 3px 8px;
-    font-size: 20px;
+    font-size: 16px;
     border: 1px solid rgb(227, 230, 234);
 }
 
@@ -214,10 +216,12 @@ nav .iconify {
 }
 
 .user-name {
-    font-size: 24px;
+    font-size: 20px;
     color: grey;
     padding: 16px 0;
     width: 100%;
+    font-weight: 300;
+    line-height: 1.5;
 }
 
 .bio {
@@ -230,11 +234,20 @@ nav .iconify {
     height: 32px;
     text-decoration: none;
     background-color: #fafbfc;
+    color: #24292e;
     padding: 5px 16px;
-    border: 1px solid rgb(227, 230, 234);
+    border: 1px solid rgba(27, 31, 35, .15);
     border-radius: 5px;
-    font-size: 15px;
+    font-size: 14px;
     margin-bottom: 16px;
+    box-shadow: 0 1px 0 rgba(27, 31, 35, .04), inset 0 1px 0 hsla(0, 0%, 100%, .25);
+    line-height: 20px;
+    font-weight: 500;
+}
+
+.edit-profile:hover {
+    background-color: #f3f4f6;
+    transition-duration: .1s;
 }
 
 .info .location {
@@ -269,8 +282,8 @@ nav .iconify {
 }
 
 .repos-info {
-    margin-top: 24px; 
-    padding: 0 16px;
+    margin-top: 24px;
+    padding: 0 16px 0 328px;
     width: 936px;
 }
 
@@ -285,6 +298,7 @@ nav .iconify {
 .pop-repos-title {
     line-height: 1.5;
 }
+
 .pin-customize {
     font-size: 13px;
     font-weight: 400;
@@ -325,19 +339,21 @@ nav .iconify {
     color: #586069;
     font-size: 12px;
     padding-bottom: 8px;
+    line-height: 1.5;
 }
 
 .repo-description {
     color: #586069;
     font-size: 12px;
     margin: 8px 0 16px 0;
+    line-height: 1.5;
 }
 
 .language-circle {
     width: 12px;
     height: 12px;
     border-radius: 50%;
-    margin-right: 2px;
+    margin-right: 3px;
 }
 
 .repo-language {
@@ -346,6 +362,13 @@ nav .iconify {
     display: flex;
     align-items: center;
     line-height: 1.5;
+    padding-top: 3px;
+}
+
+.contributions-header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
 }
 
 

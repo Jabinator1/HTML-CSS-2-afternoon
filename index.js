@@ -1,8 +1,7 @@
-
 window.onload = function() {
     repo('my-first-repo', 'https://github.com/Jabinator1/my-first-repo', '', '', 'HTML')
-    repo('my-second-repo', 'https://github.com/Jabinator1/my-second-repository', '', '', 'HTML')
-    repo('html-layout', 'https://github.com/Jabinator1/html-layout', 'Forked from DevMountain/html-layout', '', 'CSS')
+    repo('my-second-repository', 'https://github.com/Jabinator1/my-second-repository', '', '', 'HTML')
+    repo('html-layout', 'https://github.com/Jabinator1/html-layout', 'Forked from DevMountain/html-layout', 'Basics of CSS layout', 'CSS')
     repo('javascript-1-afternoon', 'https://github.com/Jabinator1/javascript-1-afternoon', 'Forked from DevMountain/javascript-1-afternoon', 'An afternoon project to help students solidify the fundamentals.', 'JavaScript')
     repo('javascript-2-afternoon-project', 'https://github.com/Jabinator1/javascript-2-afternoon-project', 'Forked from DevMountain/javascript-2-afternoon-project', '', 'JavaScript')
     repo('javascript-3-afternoon-project', 'https://github.com/Jabinator1/javascript-3-afternoon-project', 'Forked from DevMountain/javascript-3-afternoon-project', '', 'JavaScript')
@@ -11,11 +10,11 @@ window.onload = function() {
 
 function repo(title, link, Fork, description, language) {
     let latestRepos = document.getElementById("latest-repos")
-    //repo div container that has border
+        //repo div container that has border
     let repoNumDiv = document.createElement("li")
-    //content container
+        //content container
     let repoInfoDiv = document.createElement("div")
-    //inside content divs
+        //inside content divs
     let repoTitle = document.createElement("a")
     let repoFork = document.createElement("p")
     let repoDescription = document.createElement("p")
