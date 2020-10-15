@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="index.css">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
 
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     <title>Jabinator1</title>
@@ -48,13 +47,13 @@
         <div class="sticky-header">
             <div class="sticky-navigation-items">
                 <nav>
-                    <a class="current current-tab" href=""><span class="iconify current" data-icon="feather:book-open" data-inline="false"></span>Overview</a>
-                    <a class="repository" href="">
-                        <span class="iconify" data-icon="octicon:repo-16" data-inline="false"></span> Repositories
+                    <a class="current current-tab" href="./index.html"><span class="iconify current" data-icon="feather:book-open" data-inline="false"></span>Overview</a>
+                    <a class="repository tab-item" href="https://github.com/Jabinator1?tab=repositories">
+                        <span class="iconify" data-icon="octicon:repo-16" data-inline="false"></span>Repositories
                         <div class="sixteen">17</div>
                     </a>
-                    <a href=""><span class="iconify" data-icon="octicon:project-16" data-inline="false"></span>Projects</a>
-                    <a href=""><span class="iconify" data-icon="octicon:package-16" data-inline="false"></span>Packages</a>
+                    <a class="tab-item" href="https://github.com/Jabinator1?tab=projects"><span class="iconify" data-icon="octicon:project-16" data-inline="false"></span>Projects</a>
+                    <a class="tab-item" href="https://github.com/Jabinator1?tab=packages"><span class="iconify" data-icon="octicon:package-16" data-inline="false"></span>Packages</a>
                 </nav>
             </div>
         </div>
@@ -94,6 +93,7 @@
                 <div class="pop-repos-title">Popular repositories</div>
                 <div class="pin-customize">Customize your pins</div>
             </div>
+
             <ol id="latest-repos">
 
             </ol>
@@ -101,7 +101,7 @@
             <div class="contributions">
                 <div class="contributions-header">
                     <div class="contributions-title">40 contributions in the last year</div>
-                    <div class="contribution-settings">Contribution settings <span class="caret grey"></span> </div>
+                    <div class="pin-customize arrow-fix">Contribution settings <span class="caret grey"></span> </div>
                 </div>
                 <div class="contributions-graph">
 
@@ -112,28 +112,30 @@
                         <div class="contribution-year">2020</div>
                     </div>
                 </div>
-                <div class="something-unexpected">See something unexpected? Take a look at the GitHub profile guide.</div>
+                <div class="something-unexpected">See something unexpected? Take a look at the <a id="unexpected-link" href="https://docs.github.com/en/free-pro-team@latest/github/setting-up-and-managing-your-github-profile">GitHub profile guide.</a></div>
             </div>
         </div>
     </div>
 
-    <!-- <footer>
-        <img src="" alt="">
-        <div class="copyright">&copy 2020 GitHub 2020, Inc.</div>
-        <ul>
-            <li>Terms</li>
-            <li>Privacy</li>
-            <li>Security</li>
-            <li>Status</li>
-            <li>Help</li>
-            <li>Contact GitHub</li>
-            <li>Pricing</li>
-            <li>API</li>
-            <li>Training</li>
-            <li>Blog</li>
-            <li>About</li>
-        </ul>
-    </footer> -->
+    <footer>
+        <div class="footer-container">
+            <img src="" alt="">
+            <div class="copyright">&copy 2020 GitHub, Inc.</div>
+            <ul>
+                <li>Terms</li>
+                <li>Privacy</li>
+                <li>Security</li>
+                <li>Status</li>
+                <li>Help</li>
+                <li>Contact GitHub</li>
+                <li>Pricing</li>
+                <li>API</li>
+                <li>Training</li>
+                <li>Blog</li>
+                <li>About</li>
+            </ul>
+        </div>
+    </footer>
 
     <script src="index.js"></script>
 </body>
